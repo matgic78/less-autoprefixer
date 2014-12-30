@@ -5,7 +5,7 @@ var Future = Npm.require('fibers/future');
 var autoprefixer = Npm.require('autoprefixer-core');
 var autoprefixerOptions = {};
 
-Plugin.registerSourceHandler("less", {archMatching: 'web'}, function (compileStep) {
+Plugin.registerSourceHandler("p.less", {archMatching: 'web'}, function (compileStep) {
   var source = compileStep.read().toString('utf8');
   var options = {
     filename: compileStep.inputPath,
